@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +10,8 @@
     <link rel="shortcut icon" href="midia_c/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+
 <body>
     <header>
         <nav id="idMudar" class="navBar">
@@ -37,12 +41,9 @@
 
     <div class="barraCor" id="inicio">
         <div class="barraFoto">
-              <div class="foto">
-            <img src="midia_c/foto_curricul.jpeg" alt="">
-        </div>
-        <div class="textoFoto">
+            <div class="textoFoto">
             <h2 id="prog" class="programador">PROGRAMADOR E WEBDESIGNER</h2>
-            <p class="detalhes">Crio robôs virtuais para automatização de respostas utilizando Python. <br>Desenvolvo sites usando HTML, CSS e JavaScript.</p>
+            <p id="detalhesProg" class="detalhes">Crio robôs virtuais para automatização de respostas utilizando Python. <br>Desenvolvo sites usando HTML, CSS e JavaScript.</p>
             <h2 class="titulo">TELEFONE</h2>
             <p class="detalhes">(75)98882-1124</p>
             <h2 class="titulo">E-mail</h2>
@@ -52,7 +53,7 @@
                     Baixar currículo
                 </button>
             </a>
-        </div>
+            </div>
         </div>
     </div>
     <div class="espaço">
@@ -73,7 +74,7 @@
         <h2 id="animar" class="animacaoDescer">...</h2>
 
     </div>
-    <div class="textoApresentação">
+    <div class="textoApresentacao">
         <div id="sobreMim"></div>
         <h2> SObre mim</h2>
         <div class="barraBranca">
@@ -125,6 +126,37 @@
     </div>
         
         
+    <footer>
+        <div class="rodapezao" id="rodapeID">
+            <div class="logotipo">
+                <img src="midia_c/logo.png" alt="">
+            </div>
+            <div class="rodape">
+                <div class="zapRodape">
+                    <a class="zap" href="https://api.whatsapp.com/send?phone=5575988821124&text=Olá Arthur, analisamos seu currículo e ficamos interessados" target="_blank">
+                        <img src="midia_c/5a4e2ef62da5ad73df7efe6e.png" alt="Contato pelo WhatsApp" title="Contatar por Whatsapp"> 
+                    </a>
+                    <a  href="https://api.whatsapp.com/send?phone=5575988821124&text=Olá Arthur, analisamos seu currículo e ficamos interessados">
+                        (75)98882-1124
+                    </a>
+                </div>
+                <div class="emailRodape">
+                    <a class="email" href="mailto:arthurrmdev@gmail.com?subject=Estamos interessados em seu currículo">
+                        <img src="midia_c/email.png" alt="Contato por email" title="Contatar por e-mail">
+                    </a>
+                    <a  href="mailto:arthurrmdev@gmail.com?subject=Estamos interessados em seu currículo">arthurrmdev@gmail.com</a>
+                </div>
+                <div class="linkedinRodape">
+                    <a class="linkedin" href="https://www.linkedin.com/in/arthur-mota-5752ab302/" target="_blank">
+                        <img src="midia_c/linkedin.png" alt="Contato pelo linkedin" title="Contatar por Linkedin">
+                    </a>
+                    <a  href="https://www.linkedin.com/in/arthur-mota-5752ab302/">LINKEDIN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script>
         function typewriteGenerico(elemento, intervalo, processarCaractere) {
             const arrayText = elemento.innerHTML.split('');
@@ -182,34 +214,5 @@
         }
         window.addEventListener('scroll', activeScroll);
     </script>
-    <footer>
-        <div class="rodapezao" id="rodapeID">
-            <div class="logotipo">
-                <img src="midia_c/logo.png" alt="">
-            </div>
-            <div class="rodape">
-                <div class="zapRodape">
-                    <a class="zap" href="https://api.whatsapp.com/send?phone=5575988821124&text=Olá Arthur, analisamos seu currículo e ficamos interessados" target="_blank">
-                        <img src="midia_c/5a4e2ef62da5ad73df7efe6e.png" alt="Contato pelo WhatsApp" title="Contatar por Whatsapp"> 
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=5575988821124&text=Olá Arthur, analisamos seu currículo e ficamos interessados">
-                        (75)98882-1124
-                    </a>
-                </div>
-                <div class="emailRodape">
-                    <a class="email" href="mailto:arthurrmdev@gmail.com?subject=Estamos interessados em seu currículo">
-                        <img src="midia_c/email.png" alt="Contato por email" title="Contatar por e-mail">
-                    </a>
-                    <a href="mailto:arthurrmdev@gmail.com?subject=Estamos interessados em seu currículo">arthurrmdev@gmail.com</a>
-                </div>
-                <div class="linkedinRodape">
-                    <a class="linkedin" href="https://www.linkedin.com/in/arthur-mota-5752ab302/" target="_blank">
-                        <img src="midia_c/linkedin.png" alt="Contato pelo linkedin" title="Contatar por Linkedin">
-                    </a>
-                    <a href="https://www.linkedin.com/in/arthur-mota-5752ab302/">LINKEDIN</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
