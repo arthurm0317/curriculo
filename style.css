@@ -687,6 +687,9 @@ footer{
 }
 @media(max-width:330){
     .mobile{
-        margin-left: 0;
+        margin-left: 15%;
+    }
+    header{
+        width: 100%;
     }
 }
