@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Mota</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="midia_c/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav id="idMudar" class="navBar">
+            <div class="logo">
+                <a id="logoID"  href="">Arthur Mota</a>
+            </div>
+            
+            <div class="mobile">
+                <i id="idMobile" class="fa-solid fa-bars"></i>
+            </div>
+            <ul id="navListID" class="nav_list">
+                <li>
+                    <a  class="botaoNav" href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a class="botaoNav" href="#sobreMim">Sobre mim</a>
+                </li>
+                <li>
+                    <a  class="botaoNav" href="#portifolioID">portifólio</a>
+                </li>
+                <li>
+                    <a  class="botaoNav" href="#rodapeID">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="barraCor" id="inicio">
+        <div class="barraFoto">
+              <div class="foto">
+            <img src="midia_c/foto_curricul.jpeg" alt="">
+        </div>
+        <div class="textoFoto">
+            <h2 id="prog" class="programador">PROGRAMADOR E WEBDESIGNER</h2>
+            <p class="detalhes">Crio robôs virtuais para automatização de respostas utilizando Python. <br>Desenvolvo sites usando HTML, CSS e JavaScript.</p>
+            <h2 class="titulo">TELEFONE</h2>
+            <p class="detalhes">(75)98882-1124</p>
+            <h2 class="titulo">E-mail</h2>
+            <p class="detalhes">arthurrmdev@gmail.com</p>
+            <a href="midia_c/Curriculum Vitae.pdf" download="Curriculum_Vitae" >
+                <button class="baixar">
+                    Baixar currículo
+                </button>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="espaço">
+      
+        <div class="barraSocial">
+            <a class="zap" href="https://api.whatsapp.com/send?phone=5575988821124&text=Olá Arthur, analisamos seu currículo e ficamos interessados" target="_blank">
+                <img src="midia_c/5a4e2ef62da5ad73df7efe6e.png" alt="Contato pelo WhatsApp" title="Contatar por Whatsapp"> 
+            </a>
+            <a class="email" href="mailto:arthurrmdev@gmail.com?subject=Estamos interessados em seu currículo">
+                <img src="midia_c/email.png" alt="Contato por email" title="Contatar por e-mail">
+            </a>
+            <a class="linkedin" href="https://www.linkedin.com/in/arthur-mota-5752ab302/" target="_blank">
+                <img src="midia_c/linkedin.png" alt="Contato pelo linkedin" title="Contatar por Linkedin">
+            </a>
+        </div>
+    </div>
+    <div class="chamarAtencao">
+        <h2 id="animar" class="animacaoDescer">...</h2>
+
+    </div>
+    <div class="textoApresentação">
+        <div id="sobreMim"></div>
+        <h2> SObre mim</h2>
+        <div class="barraBranca">
+            <p>Sou programador e webdesigner, atualmente cursando Ciência da computação na Uniruy Wyden, fluente em inglês, 
+            com conclusão do Michigan English Test (MET) e certificado de conclusão do curso de Inglês pela Fundação Richard Hugh Fisk, sou
+         proativo e tenho fácil adaptibilidade. <br>Tenho como objetivo conciliar o aprimoramento de minhas habilidades à resolução de
+         quaisquer tarefas e problemas designados à minha área.</p>
+        </div>
+        
+    </div>
+    <div class="necudo">
+        <div id="portifolioID"></div>
+        <div class="portifolio" ><h2 >portifólio</h2></div>
+    </div>
+
+
+    <div class="cartoes">
+        <div class="cards">
+            <div class="fotoCard">
+                <img src="midia_c/pizza.png" alt="">
+            </div>
+            <div class="conteudo">
+                <h2>
+                    PIZZARIA
+                </h2>
+                <p>
+                    Programa para uma pizzaria feito para projeto da faculdade, utilizando Python e as biblioteca TKinter e SQLite para implementação do banco de dados.
+                </p>
+                <a href="" >
+                    <button class="mais">
+                        Ler mais
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="fotoCard">
+                <img src="midia_c/discord.png" alt="">
+            </div>
+            <div class="conteudo">
+                <h2>Robô virtual</h2>
+                <p>Criado como projeto pessoal, desenvolvido para o aplicativo Discord através de uma biblioteca do Python. <br>Este robô teve como finalidade estudar maneiras de criar um robô para automação de respostas.</p>
+                <a href=""> 
+                <button class="mais">
+                    Ler mais
+                </button></a>
+            </div>
+        </div>
+    </div>
+        
+        
+    <script>
+        function typewriteGenerico(elemento, intervalo, processarCaractere) {
+            const arrayText = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            arrayText.forEach((letra, i) => {setTimeout(() => {elemento.innerHTML += processarCaractere(letra);}, intervalo * i);});
+        }
+
+        function typewrite(elemento) {
+            elemento.style.display = 'block'; 
+            typewriteGenerico(elemento, 120, (letra) => letra);
+        }
+
+        function typewriteLento(elemento, intervalo, processarCaractere) {
+            elemento.style.display = 'block'; 
+            typewriteGenerico(elemento, intervalo, processarCaractere);
+        }
+
+        
+        const descricao = document.getElementById('prog');
+        typewrite(descricao);
+        
+        
+        setTimeout(function() {
+            typewriteLento(document.getElementById('animar'), 700, letra => letra);
+        }, 4500);
+        
+        function deleteText(element) {
+            const text = element.innerText;
+            for (let i = text.length; i >= 0; i--) {
+            setTimeout(() => { element.innerText = text.substring(0, i);}, (text.length - i) * 500);
+            }
+        }
+
+        var neca = document.getElementById('animar');
+
+        setTimeout(() => {deleteText(neca);}, 6000);
+
+        setTimeout(() => {
+            neca.innerText = 'SAIBA MAIS ABAIXO';
+            typewriteLento(neca, 200, letra => letra);
+        }, 8000);
+
+        const menu = document.getElementById('idMudar');
+        const logo = document.getElementById('logoID');
+        const itens = document.querySelectorAll('#navListID li a');
+        const barrinha = document.getElementById('idMobile')
+
+        function activeScroll(){
+            menu.classList.toggle('ativo', window.scrollY > 490);
+            logo.classList.toggle('ativo', window.scrollY > 490);
+            barrinha.classList.toggle('ativo', window.scrollY > 490);
+            itens.forEach(item => {
+                item.classList.toggle('ativo', window.scrollY > 490);
+            });
+        }
+        window.addEventListener('scroll', activeScroll);
+    </script>
+    <footer>
+        <div class="rodapezao" id="rodapeID">
+            <div class="logotipo">
+                <img src="midia_c/logo.png" alt="">
+            </div>
+            <div class="rodape">
+                <div class="zapRodape">
+                    <a class="zap" href="https://api.whatsapp.com/send?phone=5575988821124&text=Olá Arthur, analisamos seu currículo e ficamos interessados" target="_blank">
+                        <img src="midia_c/5a4e2ef62da5ad73df7efe6e.png" alt="Contato pelo WhatsApp" title="Contatar por Whatsapp"> 
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5575988821124&text=Olá Arthur, analisamos seu currículo e ficamos interessados">
+                        (75)98882-1124
+                    </a>
+                </div>
+                <div class="emailRodape">
+                    <a class="email" href="mailto:arthurrmdev@gmail.com?subject=Estamos interessados em seu currículo">
+                        <img src="midia_c/email.png" alt="Contato por email" title="Contatar por e-mail">
+                    </a>
+                    <a href="mailto:arthurrmdev@gmail.com?subject=Estamos interessados em seu currículo">arthurrmdev@gmail.com</a>
+                </div>
+                <div class="linkedinRodape">
+                    <a class="linkedin" href="https://www.linkedin.com/in/arthur-mota-5752ab302/" target="_blank">
+                        <img src="midia_c/linkedin.png" alt="Contato pelo linkedin" title="Contatar por Linkedin">
+                    </a>
+                    <a href="https://www.linkedin.com/in/arthur-mota-5752ab302/">LINKEDIN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
