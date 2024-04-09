@@ -25,7 +25,7 @@ header{
     text-transform: uppercase;
     letter-spacing: 4px;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 30px;
     color: #0D214F;
     text-decoration: none;
     transition: 0.5s;
@@ -47,6 +47,7 @@ header{
     height: 8vh;
     width: 100%;
     top: 0px;
+    overflow-y: visible;
     transition: 0.75s;
 }
 header{
@@ -96,10 +97,11 @@ header{
 .barraFoto{
     margin-top: 100px;
     background: #F5F5DC;
-    height: 400px;
+    height: auto;
     width: 70%;
     display: flex;
     border-radius: 20px;
+    
 }
 .espaço{
     width: 100%;
@@ -143,7 +145,11 @@ header{
 }
 .textoFoto{
     height: 400px;
-    width: 300px;
+    width:300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 .meuNome, .programador, .detalhes, .titulo, .baixar{
     margin-left: 100px;
@@ -157,6 +163,7 @@ header{
     width: 150%;
     
 }
+
 
 @keyframes pisca {
     
@@ -212,7 +219,7 @@ header{
     opacity: 1;
     animation: pisca 1.2s infinite;
 }
-.textoApresentação{
+.textoApresentacao{
     display: flex;
     flex-direction: column;
     justify-content: center ;
@@ -221,13 +228,13 @@ header{
     padding-left: 200px;
     padding-right: 200px;
 }
-.textoApresentação h2, .portifolio h2{
+.textoApresentacao h2, .portifolio h2{
     color:#0C204E;
     font-size: 36px;
     text-transform: uppercase;  
 }
 
-.textoApresentação p{
+.textoApresentacao p{
     padding: 20px 80px 20px 80px;   
     color: #1943A6;
     font-size: 20px;
@@ -431,8 +438,9 @@ footer{
     .barraBranca p{
         padding: 0px;
     }
-    .textoApresentação{
-        padding: 100px;
+    .textoApresentacao{
+        margin-top: 70px;
+        padding: 0px 100px 0px 100px;
     }
 }
 @media(max-width:930px){
@@ -455,5 +463,230 @@ footer{
 @media(max-width:830px){
     .mobile{
         margin-left: 55%;
+    }
+}
+@media (max-width:735px){
+    .animacaoDescer{
+        margin-top: 5px;
+    }
+    .navBar{
+        top: 100%;
+    }
+    .mobile{
+        margin-left: 55%;
+    }
+    .programador{
+        font-size: 20px;
+    }
+    .titulo{
+        font-size: 16px;
+    }
+    .detalhes{
+        font-size: 14px;
+    }
+    #detalhesProg{
+        font-size: 16px;
+    }
+    .chamarAtencao h2{
+        font-size: 50px;
+    }
+    .textoApresentacao{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width:680px){
+
+   .barraFoto{
+    width: 70%;
+   }
+    .mobile{
+        margin-left: 50%;
+    }
+    footer{
+        width: 100%;
+    }
+    html{
+        width: 100%;
+    }
+    .textoApresentacao{
+        padding: 30px;
+    }
+    #detalhesProg{
+        width: 300px;
+    }
+}
+@media(max-width:650px){
+    .textoFoto{
+        width: 45%;
+    }
+    .barraFoto{
+        width: 70%;
+    }
+}
+@media (max-width: 560px){
+    .mobile{
+        margin-left: 40%;
+    }
+    .programador{
+        font-size: 18px;
+    }
+    .titulo{
+        font-size: 16px;
+    }
+    .detalhes{
+        font-size: 14px;
+    }
+    #detalhesProg{
+        font-size: 14px;
+    }
+    .chamarAtencao h2{
+        font-size: 40px;
+    }
+    .textoApresentacao{
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+    .rodapezao{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .baixar {
+        margin-top: 5px;
+    }
+    .programador, .detalhes, .titulo, .baixar {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 515px) {
+    .mobile{
+        margin-left: 40%;
+    }
+    .logo a{
+        margin-left: 20px ;
+    }
+    .sumir{
+        display: none;
+    }
+    .zapRodape img, .emailRodape img, .linkedinRodape img{
+        display: none;
+    }
+    .zapRodape{
+        margin-left: 15px;
+    }
+    
+    .rodape{
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .programador{
+        font-size: 16px;
+    }
+    .titulo {
+       font-size: 14px;
+    }
+    .detalhes{
+        font-size: 12px;
+    }
+    #detalhesProg{
+        display: block;
+        font-size: 14px;
+    }
+    .baixar{
+        width: 200px;
+    }
+    .chamarAtencao h2{
+        font-size: 40px;
+    }
+    .textoApresentacao{
+        margin-top: 0px;
+    }
+    .rodapezao{
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:475px){
+ 
+    .cards{
+        margin-right:0px ;
+    }
+    .zapRodape, .linkedinRodape, .emailRodape{
+        margin-left: 40px; 
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape{
+        align-items: start;
+        justify-content: start;
+    }
+    .programador{
+        width: 250px;
+    }
+    #detalhesProg{
+        width: 250px;
+    }
+}
+
+@media(max-width:410px){
+    .mobile{
+        margin-left: 25%;
+    }
+   .chamarAtencao h2{
+    font-size: 30px;
+   }
+   .programador{
+    width: 200px;
+    }
+    #detalhesProg{
+        width: 200px;
+    }
+    .titulo{
+    font-size: 14px;
+    }
+    .detalhes{
+        font-size: 12px;
+    }
+    .baixar{
+        width: 160px;
+    }
+    .zapRodape, .linkedinRodape, .emailRodape{
+        margin-left: 0px;
+    }
+    footer{
+        align-items: center;
+        justify-content: center;
+        height: 185px;
+    }
+    .logotipo{
+        justify-content: center;
+        align-items:center ;
+    }
+    .logotipo img{
+        margin-top: 30px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .rodapezao{
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .cards{
+        width: 70%;
+    }
+    .cards .fotoCard img{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+@media(max-width:330){
+    .mobile{
+        margin-left: 0;
     }
 }
